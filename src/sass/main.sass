@@ -3,18 +3,18 @@
 // @media screen and (max-width:640px)
 body
 
-  max-width: 640px
+  // max-width: 640px
 
   margin: 0 auto
   padding: 0
   box-sizing: content-box
-
+//section header 
 .header
   display: flex
   justify-content: space-between
   max-height: 62px
   background-color: #f5c506
-  border-bottom: 5px solid #a9a599
+
   &__logo
     display: flex
     align-items: center
@@ -67,7 +67,7 @@ body
        background: #000
        opacity: 0.1
        position: absolute
-       top: -20px
+       top: -22px
        left: -13px
 
      img
@@ -81,7 +81,7 @@ body
 .header__nav .first::after
   background: none
 .header__nav .middle::after
-
+  top: -22px
   left: -8px
 
 .logo
@@ -103,3 +103,51 @@ body
     width: 24px
     height: 22px
 
+// section video1
+.bg
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 2
+    background-color: #edc23a
+    opacity: 0.11
+    width: 100%
+    height: 327px
+
+.video-wrapper
+  position: relative
+  video
+  &::after
+    content: ''
+    width: 67px
+    height: 67px
+    background-color: #f5c506
+    background-image: url('../assets/img/logo_click.png')
+    background-position: 57% 50%
+    background-repeat: no-repeat
+    opacity: 0.72
+    border-radius: 50%
+    position: absolute
+    top: calc(50% - 33.5px )
+    left: calc(51% - 33.5px )
+    z-index: 5
+    display: block
+  &::before
+    content: ''
+    width: 27px
+    height: 27px
+    opacity: 0.37
+    background-color: #f5c506
+    position: absolute
+    background-image: url('../assets/img/logo_click.png')
+    background-position: 65% 50%
+    background-repeat: no-repeat
+    background-size: 10px 17px
+    top: 84%
+    left: 12.9%
+    z-index: 5
+    display: block
+    
+
+
+    
