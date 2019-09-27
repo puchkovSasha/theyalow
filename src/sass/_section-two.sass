@@ -1,0 +1,50 @@
+//section-two
+
+.section-two
+  display: flex
+  margin-top: 40px
+  justify-content: space-between
+  
+  &-left
+    flex-basis: 49.6%
+    position: relative
+    &-text
+      background-color: #ec9e03
+      color: #ffffff
+      font-family: "Segoe WP"
+      font-size: 29px
+      font-weight: 300
+      line-height: 33.31px
+      letter-spacing: 0.33px
+      margin-left: 9px
+      margin-right: 10px
+      padding: 16px 16px 19px 26px
+      p
+        margin: 0
+        padding: 0
+  &-right
+    &-video
+      margin-right: 8px
+      position: relative
+      &::after
+        content: ''
+        width: 61px
+        height: 61px
+        border-radius: 50%
+        opacity: 0.72
+        background-color: #f5c506
+        position: absolute
+        background-image: url('../assets/img/logo_click.png')
+        background-position: 60% 50%
+        background-repeat: no-repeat
+        background-size: 18px 32px
+        top: 39%
+        left: 41%
+        z-index: 20
+        display: block
+.mark
+  color: #ffffff
+  position: absolute
+  top: 85%
+  right: 6%
+  z-index: 24
