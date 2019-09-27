@@ -47,8 +47,9 @@
   font-style: normal;
 }
 
-body {
+.container {
   min-width: 640px;
+  background: white;
   margin: 0 auto;
   padding: 0;
   -webkit-box-sizing: content-box;
@@ -78,10 +79,6 @@ body {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#4c4c4c), to(rgba(255, 255, 255, 0.1)));
   background-image: -o-linear-gradient(bottom, #4c4c4c 0%, rgba(255, 255, 255, 0.1) 100%);
   background-image: linear-gradient(to top, #4c4c4c 0%, rgba(255, 255, 255, 0.1) 100%);
-}
-
-.header__logo svg {
-  margin: 11px 8px 12px 12px;
 }
 
 .header__logo h1 {
@@ -167,6 +164,14 @@ body {
 .header__nav .middle::after {
   top: -22px;
   left: -8px;
+}
+
+.logo-h {
+  background: url("../assets/img/logo-footer.png");
+  background-size: cover;
+  width: 40px;
+  height: 39px;
+  margin: 11px 8px 12px 12px;
 }
 
 .logo_mail {
@@ -605,4 +610,45 @@ body {
   font-size: 16.68px;
   text-transform: uppercase;
   letter-spacing: 0.41px;
+}
+
+@media (min-width: 641px) {
+  .container {
+    width: 1020px;
+  }
+
+  .header-big {
+    padding-top: 25px;
+    background-image: url("../assets/img/big-bg.jpg");
+    width: 100%;
+    height: 565px;
+    background-repeat: no-repeat;
+  }
+
+  .bg {
+    display: none;
+  }
+
+  .header {
+    background: none;
+    width: 100%;
+    position: absolute;
+  }
+
+  .header__logo {
+    top: 30%;
+    background: none;
+    border: 1px solid red;
+  }
+
+  .header__logo img {
+    width: 83px;
+    height: 83px;
+  }
+
+  .header__nav {
+    border: 1px solid red;
+    -ms-flex-preferred-size: 45%;
+    flex-basis: 45%;
+  }
 }
