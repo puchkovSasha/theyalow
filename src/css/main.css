@@ -508,3 +508,68 @@ body {
   position: relative;
   right: 1%;
 }
+
+.section-device {
+  background-color: #474747;
+  padding-top: 5%;
+  padding-bottom: 9%;
+}
+
+.section-device__title {
+  color: #f5c506;
+  font-family: "Open Sans";
+  font-size: 39px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.39px;
+  text-align: center;
+  margin-bottom: 12%;
+  margin-right: 2%;
+}
+
+.section-devices {
+  margin-left: 8.9%;
+  position: relative;
+}
+
+.section-devices::before {
+  content: 'Its 100% Free';
+  color: #ffffff;
+  font-family: "PT Sans - Narrow Bold";
+  font-size: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.51px;
+  width: 116px;
+  height: 116px;
+  background-color: #f5c506;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  top: -16%;
+  left: -5%;
+}
+
+.laptop {
+  margin-right: 3.5%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pos-tablet-right {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40%;
+}
+
+.tablet {
+  margin-right: 9%;
+}
