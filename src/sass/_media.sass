@@ -1,29 +1,127 @@
 @media (min-width:641px)
+    body
+        width: 100%
+
     .container
         width: 1020px
     .header-big
         padding-top: 25px
         background-image: url('../assets/img/big-bg.jpg')
 
-        width: 100%
         height: 565px
         background-repeat: no-repeat
     .bg
         display: none
     .header
         background: none
-        width: 100%
-        position: absolute
-
- 
         
+        position: absolute
+ 
         &__logo
-            top: 30%
+            top: 4%
+            left: 0%
             background: none
-            border: 1px solid red
-            img
-                width: 83px
-                height: 83px    
+
+            position: absolute
+            h1
+                margin-top: 8px
+                font-size: 41px
+        
+                  
         &__nav
-            border: 1px solid red
-            flex-basis: 45% 
+            margin: 0
+            display: flex
+            align-items: center
+            top: 47px
+            left: 125%  
+            position: relative
+            width: 453px
+            height: 41px
+            background-color: #f5c506
+            box-shadow: -3px -6px 0 0 rgba(245,197 ,006 ,0.271 ), -7px -9px 0 0 rgba(245,197 ,006 ,0.271 )
+            
+            a
+                font-size: 17px
+                &::after
+                    left: -17px
+                    top: -11px
+                    height: 41px
+ 
+            li 
+                margin: 0
+                &:last-child
+                    margin-right: 0
+    .header__nav .middle::after
+        top: -10px
+        left: -13px
+        height: 41px
+    .first,
+    .middle,
+    .last
+        margin: 0
+    .first
+        margin-right: 36px
+    .middle
+        margin-right: 12px
+    .logo
+        &_people
+            width: 21px
+            height: 19px
+            margin: 0
+            margin-left: 39px
+            margin-right: 9px
+        &_tools
+            width: 19px
+            height: 19px
+        &_mail
+            width: 24px
+            height: 18px
+            margin-right: 10px
+    .logo-h
+        background: url('../assets/img/logo-big.png')
+        background-repeat: no-repeat
+        background-size: cover
+        width: 83px
+        height: 83px    
+        margin: 0
+        margin-right: 4px
+    .video-wrapper
+        position: absolute
+        top: 167px  
+        left: 3.5%
+        &::before
+            left: 5.5%
+            top: 85%
+        &__line
+            top: 87.6%
+            left: 14.9%
+            &-two
+                top: 87.6%
+                left: 14.9%
+    .v-wrapper
+        width: 549px
+        height: 327px
+        video
+           object-fit: cover
+           max-height: none
+           height: 100%
+
+    .video__title
+        display: inline-block
+        top: 243px
+        left: 58.5%
+        position: absolute
+        color: #ffffff
+        font-family: Asap
+        font-size: 63px
+        font-weight: 400
+        text-transform: uppercase
+        letter-spacing: 0.63px
+
+        text-align: center
+        span
+            color: #f5c506
+
+
+        
+
