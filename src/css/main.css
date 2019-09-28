@@ -447,6 +447,14 @@
   z-index: 24;
 }
 
+.april {
+  display: none;
+}
+
+.range {
+  display: none;
+}
+
 .section-twitter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -528,6 +536,10 @@
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.16)), to(rgba(255, 255, 255, 0.16)));
   background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.16) 0%, rgba(255, 255, 255, 0.16) 100%);
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.16) 0%, rgba(255, 255, 255, 0.16) 100%);
+}
+
+.section-twitter-left-mark {
+  display: none;
 }
 
 .section-device {
@@ -633,6 +645,7 @@
 
   .container {
     width: 1020px;
+    background: none;
   }
 
   .header-big {
@@ -919,5 +932,169 @@
   .mid-title-three {
     margin-top: 1px;
     margin-left: 22px;
+  }
+
+  .bg-section-two {
+    background-image: url("../assets/img/bg-section-two-big.jpg");
+    width: 100%;
+    padding-bottom: 249px;
+    background-size: cover;
+  }
+
+  .section-two {
+    display: inline-block;
+    margin-top: 0;
+  }
+
+  .section-two-left {
+    top: 110px;
+    left: -12px;
+    max-width: 359px;
+    display: inline-block;
+    max-height: 233px;
+  }
+
+  .section-two-left-text {
+    padding: 17px 16px 0 30px;
+    line-height: 38px;
+  }
+
+  .section-two-right {
+    max-width: 315px;
+    display: inline-block;
+  }
+
+  .section-two-right-video {
+    top: 107px;
+    left: -26px;
+  }
+
+  .section-two-right-video::after {
+    top: 40%;
+    left: 42.8%;
+  }
+
+  .section-twitter {
+    width: 329px;
+    display: inline-block;
+    top: 68px;
+    left: 2px;
+    position: relative;
+  }
+
+  .section-twitter::before {
+    content: '22';
+    color: #ffffff;
+    font-family: "Segoe WP";
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 38px;
+    letter-spacing: 0.25px;
+    width: 24px;
+    height: 18px;
+    display: block;
+    z-index: 10;
+    position: absolute;
+    right: 16px;
+    top: 8px;
+  }
+
+  .section-twitter-right {
+    display: none;
+  }
+
+  .section-twitter-left {
+    padding-top: 17.7%;
+    padding-bottom: 10.9%;
+    padding-left: 1%;
+  }
+
+  .section-twitter-left-mark {
+    display: block;
+    position: absolute;
+    right: 3px;
+    bottom: 8px;
+    color: #ffffff;
+  }
+
+  .mark {
+    top: 88%;
+  }
+
+  .april {
+    position: absolute;
+    background-color: #ddb101;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: 51px;
+    font-weight: 700;
+    line-height: 38px;
+    max-width: 113px;
+    max-height: 86px;
+    left: 9px;
+    letter-spacing: 0.51px;
+    padding: 2px 27px 0px 28px;
+  }
+
+  .april .month {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 38px;
+    color: #b26529;
+    text-transform: uppercase;
+  }
+
+  .range {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 363px;
+    left: 84px;
+    position: absolute;
+  }
+
+  .range input[type="range"] {
+    margin: auto;
+    -webkit-appearance: none;
+    position: relative;
+    overflow: hidden;
+    width: 896px;
+    height: 15px;
+    cursor: pointer;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #f5c506;
+    outline: none;
+  }
+
+  .range input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #ffffff;
+    opacity: 0.48;
+  }
+
+  .range input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 197px;
+    height: 15px;
+    background-color: #ec9e03;
+    -webkit-box-shadow: -100vw 0 0 100vw rgba(255, 255, 255, 0.48), inset 0 0 0 40px #ec9e03;
+    box-shadow: -100vw 0 0 100vw rgba(255, 255, 255, 0.48), inset 0 0 0 40px #ec9e03;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    outline: none;
   }
 }
