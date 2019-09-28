@@ -455,6 +455,10 @@
   display: none;
 }
 
+.section-two__textTop {
+  display: none;
+}
+
 .section-twitter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1096,5 +1100,18 @@
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     outline: none;
+  }
+
+  .section-two__textTop {
+    position: absolute;
+    top: 813px;
+    left: 22px;
+    display: block;
+    color: #ffffff;
+    font-family: "PT Sans - Narrow Bold";
+    font-size: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4.37px;
   }
 }
