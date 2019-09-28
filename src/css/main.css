@@ -612,6 +612,10 @@
   margin-right: 9%;
 }
 
+.section-device-text {
+  display: none;
+}
+
 .footer {
   -webkit-box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.75);
   box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.75);
@@ -941,7 +945,7 @@
   .bg-section-two {
     background-image: url("../assets/img/bg-section-two-big.jpg");
     width: 100%;
-    padding-bottom: 249px;
+    padding-bottom: 234px;
     background-size: cover;
   }
 
@@ -1105,7 +1109,7 @@
   .section-two__textTop {
     position: absolute;
     top: 813px;
-    left: 22px;
+    left: 31px;
     display: block;
     color: #ffffff;
     font-family: "PT Sans - Narrow Bold";
@@ -1113,5 +1117,86 @@
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 4.37px;
+  }
+
+  .bg-section-device {
+    background-image: url("../assets/img/bg-section-device-big.jpg");
+    height: 497px;
+  }
+
+  .section-device {
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 40px;
+  }
+
+  .section-device__title {
+    font-family: "PT Sans - Narrow Bold";
+    font-size: 43px;
+    letter-spacing: 5px;
+    margin-left: 29px;
+    margin-bottom: 5%;
+  }
+
+  .section-devices {
+    margin-left: 1.9%;
+  }
+
+  .section-devices::before {
+    top: -17%;
+    left: -2%;
+  }
+
+  .laptop {
+    margin-right: 1.8%;
+  }
+
+  .tablet {
+    margin-right: 5.1%;
+  }
+
+  .pos-tablet-right {
+    margin-top: 0;
+  }
+
+  .section-device-text {
+    display: block;
+    width: 400px;
+    position: absolute;
+    height: 50px;
+  }
+
+  .section-device-text-item {
+    color: #a9a9a7;
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.22px;
+    position: relative;
+    left: 671px;
+    bottom: 304px;
+  }
+
+  .section-device-text-item::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-color: #f5c506;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: -33px;
+    top: 6px;
+  }
+
+  .section-device-text-item:first-child {
+    margin-bottom: 24px;
+  }
+
+  .section-device-text-item:nth-child(2) {
+    margin-bottom: 17px;
+  }
+
+  .section-device-text-item:nth-child(3) {
+    margin-bottom: 25px;
   }
 }
