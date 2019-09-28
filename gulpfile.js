@@ -13,15 +13,15 @@ gulp.task('sass', function(){
         }))
     .pipe(concatCss('main.css'))
     .pipe(gulp.dest('src/css'))
-    .pipe(browserSync.reload({stream: true}))
+    .pipe(browserSync.reload({stream: true}));
 });
 gulp.task('html', function(){
     return gulp.src('src/*.html')
-    .pipe(browserSync.reload({stream: true}))
+    .pipe(browserSync.reload({stream: true}));
 });
 gulp.task('js', function(){
     return gulp.src('src/js/*.js')
-    .pipe(browserSync.reload({stream: true}))
+    .pipe(browserSync.reload({stream: true}));
 });
 gulp.task('browser-sync', function(){
 	   browserSync( {
