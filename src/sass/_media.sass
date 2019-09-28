@@ -8,7 +8,7 @@
         padding-top: 25px
         background-image: url('../assets/img/big-bg.jpg')
 
-        height: 565px
+        height: 543px
         background-repeat: no-repeat
     .bg
         display: none
@@ -123,5 +123,95 @@
             color: #f5c506
 
 
-        
+    .mid-bar
+        &-bg
+            padding-top: 61px
+            padding-bottom: 148px
+            background-image: url('../assets/img/bg1-section-two.jpg')
+            background-size: cover
+            width: 100%
+        &-wrapper
+            margin-top: -63px
+            position: absolute
+            background-image: none
+            z-index: 0
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 100% 
+            height: 212px
+
+            
+            &::after,
+            &::before
+                
+                content: none
+                
+              
+        &-item
+            align-items: center
+            height: 100%
+            display: flex
+            justify-content: center
+            flex-direction: column
+            font-size: 27px
+            text-align: center
+            &:first-child
+                border-left: 1px solid #d4d4d4
+                margin-left: -1px
+            &:nth-child(2)
+                border-left: 1px solid #d4d4d4
+                margin-left: -95px
+                justify-content: none
+            &:nth-child(3)
+                border-left: 1px solid #d4d4d4
+                
+                position: relative
+                left: -96px
+                &::before
+                    content: ''
+                    width: 1px
+                    height: 100%
+                    position: absolute
+                    display: block
+                    background-color: #d4d4d4
+                    z-index: 5
+                    left: 339px
+
+
+            
+    .mid-svg
+        &-first
+            margin-top: 28px
+            margin-left: 18%
+            margin-bottom: 0
+            width: 128px
+            height: 90px        
+            text-align: center  
+        &-second
+            margin-top: -5px
+            margin-left: 59px
+            margin-bottom: 0px
+            width: 92px
+            height: 95px
+        &-three
+            margin-top: 9px
+            margin-left: 17px
+            margin-bottom: 0px
+            width: 83px
+            height: 100px
+            
+            
+    .mid-title
+        &-first
+            margin-top: -1%
+            margin-left: 18%        
+        &-second
+            top: 9px
+            position: relative
+            margin-top: 2%
+            margin-left: 18%           
+        &-three
+            margin-top: 1px
+            margin-left: 22px           
 
