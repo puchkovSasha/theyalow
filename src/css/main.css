@@ -1221,4 +1221,12 @@
     margin-top: -6px;
     font-size: 29px;
   }
+
+  .section-device-text {
+    width: 363px;
+  }
+
+  .mid-bar-wrapper {
+    width: 96%;
+  }
 }
